@@ -1,0 +1,56 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ececec;
+}
+
+.page {
+  .header {
+    width: 100%;
+    padding: 20px;
+    background: #ccc;
+    border-bottom: 1px solid #aaa;
+
+    .title {
+      color: #444;
+    }
+  }
+
+  .footer {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 20px;
+    background: #444;
+
+    .title {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  .error {
+    padding: 5px;
+    text-align: left;
+    color: red;
+    font-size: 13px;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+}
+
+@import "./registration.less";
